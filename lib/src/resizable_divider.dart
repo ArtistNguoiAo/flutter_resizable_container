@@ -13,6 +13,7 @@ class ResizableDivider {
     this.onTapUp,
     this.mainAxisAlignment = MainAxisAlignment.center,
     this.crossAxisAlignment = CrossAxisAlignment.center,
+    this.child,
   }) : assert(thickness > 0, '[thickness] must be > 0.');
 
   /// The thickness of the line drawn within the divider.
@@ -63,4 +64,7 @@ class ResizableDivider {
 
   /// Triggers when the user's tap is released on this divider.
   final VoidCallback? onTapUp;
+
+  // The child widget to display within the divider.
+  final Widget? child;
 }

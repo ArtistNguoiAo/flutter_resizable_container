@@ -59,7 +59,7 @@ class _ResizableContainerDividerState extends State<ResizableContainerDivider> {
             onHorizontalDragEnd: _onHorizontalDragEnd,
             onTapDown: _onTapDown,
             onTapUp: _onTapUp,
-            child: CustomPaint(
+            child: widget.config.child ?? CustomPaint(
               size: Size(width, height),
               painter: DividerPainter(
                 direction: widget.direction,
